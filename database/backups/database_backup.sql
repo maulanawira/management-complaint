@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Jun 2025 pada 11.35
+-- Waktu pembuatan: 10 Jun 2025 pada 11.49
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -69,7 +69,6 @@ CREATE TABLE `complaints` (
 --
 
 INSERT INTO `complaints` (`id`, `id_komplain`, `jenis`, `user_id`, `judul`, `deskripsi`, `status`, `feedback`, `created_at`, `updated_at`) VALUES
-(6, 'FAK-090625-006', 'Fasilitas Kerja', 8, 'Toilet Kurang', 'Jumlah toilet di divisi produksi rusak 2 sehingga hanya tersisa 1 yang berfungsi', 'diproses', 'Oke, akan saya teruskan ke supervisor produksi', '2025-06-08 21:38:01', '2025-06-09 03:32:02'),
 (7, 'GDT-090625-007', 'Gaji dan Tunjangan', 11, 'THR Telat', 'THR Saya telat 3 hari', 'baru', NULL, '2025-06-09 03:31:07', '2025-06-09 03:31:07');
 
 -- --------------------------------------------------------
