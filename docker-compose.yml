@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql
+      - DB_DATABASE=management_complaint
+      - DB_USERNAME=root
+      - DB_PASSWORD=
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_DATABASE: management_complaint
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
