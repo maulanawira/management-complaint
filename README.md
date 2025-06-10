@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Setup Management Complaint System
 
 ## Requirements
@@ -19,3 +20,7 @@
 1. Buka phpMyAdmin
 2. Buat database baru dengan nama `management_complaint`
 3. Import file `database/backups/database_backup.sql`
+=======
+# management-complaint
+Sistem Informasi Management Complaint
+>>>>>>> 15feffcddeb7b99479c3a8dcd1b04793ecf1ce89
