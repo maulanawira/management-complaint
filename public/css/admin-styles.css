@@ -1,0 +1,114 @@
+    .custom-dropdown:focus {
+        border-color: #1DCD9F;
+        box-shadow: 0 0 0 0.2rem rgba(29, 205, 159, 0.25);
+    }
+
+    .custom-dropdown option:hover {
+        background-color: #1DCD9F !important;
+        color: #ffffff;
+    }
+
+    .btn-feedback {
+        background-color: #1DCD9F;
+        color: #ffffff;
+    }
+
+    .btn-feedback:hover {
+        background-color: #17b38a;
+        color: #ffffff;
+    }
+
+    .btn-kelola-akun {
+        background-color: #1DCD9F;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .btn-kelola-akun:hover {
+        background-color: #17b38a;
+        color: #ffffff;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(29, 205, 159, 0.3);
+    }
+
+    .nav-pills .nav-link {
+        color: #6c757d;
+        border-radius: 25px;
+        margin-right: 10px;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #1DCD9F;
+        border-color: #1DCD9F;
+    }
+
+    .nav-pills .nav-link:hover {
+        background-color: rgba(29, 205, 159, 0.1);
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #1DCD9F;
+        box-shadow: 0 0 0 0.2rem rgba(29, 205, 159, 0.25);
+    }
+
+    .modal-header {
+        background-color: #f8f9fa;
+        border-bottom: 2px solid #1DCD9F;
+    }
+
+    .modal-title {
+        color: #1DCD9F;
+        font-weight: 600;
+    }
+
+    select.form-select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+    }
+
+    .text-danger {
+        color: #dc3545 !important;
+    }
+
+    .btn-success {
+        background-color: #1DCD9F;
+        border-color: #1DCD9F;
+    }
+
+    .btn-success:hover {
+        background-color: #17b38a;
+        border-color: #17b38a;
+    }
+
+    /* CSS untuk memastikan font berwarna hitam di form */
+    .text-black {
+        color: #000000 !important;
+    }
+
+    .form-control.text-black, .form-select.text-black {
+        color: #000000 !important;
+        background-color: #ffffff;
+    }
+
+    .form-control.text-black::placeholder {
+        color: #6c757d !important;
+    }
+
+    .form-select.text-black option {
+        color: #000000 !important;
+        background-color: #ffffff;
+    }
+
+    .alert-info {
+        background-color: rgba(29, 205, 159, 0.1);
+        border-color: #1DCD9F;
+        color: #0d5832;
+    }

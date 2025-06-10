@@ -1,0 +1,16 @@
+.sidebar-link {
+        background-color: #ffffff;
+        color: #000000;
+        transition: 0.3s ease;
+    }
+
+    .sidebar-link:hover {
+        background-color: #1DCD9F !important;
+        color: #000000 !important;
+    }
+
+    .list-group-item.active {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border: none;
+    }

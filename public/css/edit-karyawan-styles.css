@@ -1,0 +1,41 @@
+/* Form input putih tulisan hitam */
+    .form-control.form-white-text {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #1DCD9F;
+    }
+
+    .form-control.form-white-text:focus {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-color: #169976;
+        box-shadow: 0 0 0 0.2rem rgba(29, 205, 159, 0.25);
+    }
+
+    /* Form input disabled untuk nama */
+    .form-control.form-disabled {
+        background-color: #f8f9fa !important;
+        color: #6c757d !important;
+        border: 1px solid #dee2e6;
+        cursor: not-allowed;
+    }
+
+    /* Tombol Cancel putih, border hijau, tulisan hijau */
+    .btn-cancel {
+        background-color: #ffffff;
+        color: #1DCD9F;
+        border: 1px solid #1DCD9F;
+        transition: all 0.3s ease;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    /* Hover tombol Cancel */
+    .btn-cancel:hover,
+    .btn-cancel:focus {
+        background-color: #1DCD9F;
+        color: #ffffff;
+        text-decoration: none;
+        border-color: #169976;
+        box-shadow: none;
+    }

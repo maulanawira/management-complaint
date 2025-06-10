@@ -1,0 +1,44 @@
+.sidebar-link {
+        background-color: #ffffff;
+        color: #000000;
+        transition: 0.3s ease;
+    }
+
+    .sidebar-link:hover {
+        background-color: #1DCD9F !important;
+        color: #000000 !important;
+    }
+
+    .list-group-item.active {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border: none;
+    }
+
+    select.form-select {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    select.form-select option:hover {
+        background-color: #169976;
+        color: #ffffff;
+    }
+
+    /* Samakan ukuran dan warna field */
+    .uniform-field {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #169976;
+        border-radius: 4px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Fokus tanpa ubah warna background dan teks */
+    .uniform-field:focus {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-color: #1DCD9F !important;
+        box-shadow: 0 0 0 0.2rem rgba(29, 205, 159, 0.25) !important;
+        outline: none !important;
+    }

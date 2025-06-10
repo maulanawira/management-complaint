@@ -1,0 +1,346 @@
+/* Login Styles - resources/css/login-styles.css */
+
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1DCD9F 0%, #169976 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.05) 2px,
+        rgba(255, 255, 255, 0.05) 4px
+    );
+    animation: float 20s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: none;
+    position: relative;
+    z-index: 1;
+    animation: slideUp 0.6s ease-out;
+    max-width: 450px;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #1DCD9F, #169976);
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(29, 205, 159, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.logo-circle i {
+    font-size: 36px;
+    color: white;
+}
+
+.welcome-title {
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #1DCD9F, #169976);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.welcome-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Role Button Styles */
+.btn-role {
+    border-radius: 20px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: none;
+    border: 3px solid;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    min-height: 80px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn-role-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 30px;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-role-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-role-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-role-icon i {
+    font-size: 22px;
+}
+
+.btn-role-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn-role-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.btn-role-subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 400;
+}
+
+.btn-role-arrow {
+    font-size: 18px;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+/* Shimmer Effect */
+.btn-role::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s;
+    z-index: 1;
+}
+
+.btn-role:hover::before {
+    left: 100%;
+}
+
+/* Glow Effect */
+.btn-role::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 22px;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.btn-role:hover::after {
+    opacity: 1;
+}
+
+.btn-role:hover {
+    transform: translateY(-6px) scale(1.02);
+    text-decoration: none;
+}
+
+.btn-role:hover .btn-role-icon {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.btn-role:hover .btn-role-arrow {
+    transform: translateX(8px);
+    opacity: 1;
+}
+
+/* Admin & Supervisor Button (Same Color) */
+.btn-admin,
+.btn-supervisor {
+    background: linear-gradient(135deg, #1DCD9F 0%, #169976 100%);
+    border-color: #1DCD9F;
+    color: white;
+}
+
+.btn-admin:hover,
+.btn-supervisor:hover {
+    background: linear-gradient(135deg, #22e6b8 0%, #1DCD9F 100%);
+    border-color: #22e6b8;
+    color: white;
+    box-shadow: 0 15px 40px rgba(29, 205, 159, 0.4);
+}
+
+.btn-admin:focus,
+.btn-supervisor:focus {
+    box-shadow: 0 0 0 4px rgba(29, 205, 159, 0.3);
+}
+
+/* Customer Button (Different Color - Center) */
+.btn-customer {
+    background: linear-gradient(135deg, #169976 0%, #0d5d47 100%);
+    border-color: #169976;
+    color: white;
+}
+
+.btn-customer:hover {
+    background: linear-gradient(135deg, #1DCD9F 0%, #169976 100%);
+    border-color: #1DCD9F;
+    color: white;
+    box-shadow: 0 15px 40px rgba(22, 153, 118, 0.4);
+}
+
+.btn-customer:focus {
+    box-shadow: 0 0 0 4px rgba(22, 153, 118, 0.3);
+}
+
+/* Active State */
+.btn-role:active {
+    transform: translateY(-2px) scale(0.98);
+}
+
+.login-footer {
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-text {
+    color: #666;
+    font-size: 14px;
+}
+
+.help-link {
+    color: #1DCD9F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.help-link:hover {
+    color: #169976;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .welcome-title {
+        font-size: 24px;
+    }
+
+    .role-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .role-icon i {
+        font-size: 20px;
+    }
+
+    .role-title {
+        font-size: 16px;
+    }
+
+    .role-description {
+        font-size: 13px;
+    }
+
+    .logo-circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo-circle i {
+        font-size: 30px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .login-card {
+        background: rgba(30, 30, 30, 0.95);
+    }
+
+    .welcome-title {
+        color: #fff;
+    }
+
+    .welcome-subtitle {
+        color: #ccc;
+    }
+
+    .role-card {
+        background: #2a2a2a;
+        border-color: #404040;
+        color: #fff;
+    }
+
+    .role-title {
+        color: #fff;
+    }
+
+    .role-description {
+        color: #ccc;
+    }
+
+    .footer-text {
+        color: #ccc;
+    }
+
+    .login-footer {
+        border-top-color: #404040;
+    }
+}

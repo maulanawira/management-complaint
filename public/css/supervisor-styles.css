@@ -1,0 +1,4 @@
+@media print {
+    .btn, .dropdown, .modal { display: none !important; }
+    .card-header .btn { display: none !important; }
+}
